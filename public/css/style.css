@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+    background-color: #eee;
+}
+
+#wrapper {
+    margin: 0 0 0 24px;
+}
+
+.head {
+    margin-bottom: 10px;
+}
+
+.example pre {
+    display: inline-block;
+    padding: 0.5em;
+    background-color: #ccc;
+}
+
+.credit {
+    margin: 16px 0 0 0;
+}
