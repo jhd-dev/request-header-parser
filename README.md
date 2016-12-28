@@ -1,4 +1,4 @@
-[https://porygonj-timestamp.herokuapp.com/](https://porygonj-timestamp.herokuapp.com/)
+[https://porygonj-request-header-parser.herokuapp.com/](https://porygonj-request-header-parser.herokuapp.com/)
 
 This is an API to find the IP address, language, and operating system from a browser.
 
