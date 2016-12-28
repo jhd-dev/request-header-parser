@@ -5,7 +5,6 @@ var app = express();
 app.use('/', express.static(path.join(__dirname, 'public')));
 
 app.get('/whoami', function(req, res){
-    console.log("hi!", req.ip);
     res.writeHead(200, {
         "Content-Type": "application/json" 
     });
@@ -15,8 +14,8 @@ app.get('/whoami', function(req, res){
             || req.socket.remoteAddress 
             || req.connection.socket.remoteAddress 
             || req.ip,
-        "language": "",
-        "software": ""
+        "language": req.headers['accept-language'].split(',')[0], //http://stackoverflow.com/questions/11845471/how-to-get-user-language-in-nodejs-expresjs
+        "software": req.headers['user-agent'].split(')')[0].split('(')[1]
     }));
 });
 
