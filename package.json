@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "an API to find the IP address, language, and operating system for a browser.",
   "main": "app.js",
-  "start": "node app.js"
+  "start": "node app.js",
   "scripts": {
     "test": "node test.js"
   },
