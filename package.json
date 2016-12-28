@@ -1,0 +1,22 @@
+{
+  "name": "request-header-parser",
+  "version": "1.0.0",
+  "description": "an API to find the IP address, language, and operating system for a browser.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/porygonj/request-header-parser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/porygonj/request-header-parser/issues"
+  },
+  "homepage": "https://github.com/porygonj/request-header-parser#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
