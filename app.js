@@ -10,7 +10,11 @@ app.get('/whoami', function(req, res){
         "Content-Type": "application/json" 
     });
     res.end(JSON.stringify({
-        "ipaddress": req.ip,
+        "ipaddress": req.headers['x-forwarded-for'] //http://stackoverflow.com/questions/8107856/how-to-determine-a-users-ip-address-in-node
+            || req.connection.remoteAddress 
+            || req.socket.remoteAddress 
+            || req.connection.socket.remoteAddress 
+            || req.ip,
         "language": "",
         "software": ""
     }));
